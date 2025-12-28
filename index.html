@@ -18,15 +18,24 @@
 <header class="custom-navbar">
   <div class="logo">Verbalizelt</div>
 
-  <nav class="nav-links">
+  <!-- Toggle Button -->
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="nav-links" id="navLinks">
     <a href="#">Service</a>
     <a href="#">Blog</a>
     <a href="#">About Us</a>
     <a href="#">Contact</a>
+    <button class="btn-yellow mobile-btn">Register</button>
   </nav>
 
-  <button class="btn-yellow">Register</button>
+  <button class="btn-yellow desktop-btn">Register</button>
 </header>
+
 
 <hr class="nav-divider">
 
@@ -56,7 +65,7 @@
     <!-- RIGHT CONTENT -->
     <div class="col-lg-6 col-12 hero-right">
       <div class="phone-bg">
-        <img src="ver(phone view).PNG" alt="App Preview">
+        <img src="images/ver(phone view).PNG" alt="App Preview">
       </div>
     </div>
 
@@ -68,20 +77,29 @@
 
     <!-- Students Enroll -->
     <div class="col-md-4 students">
-      <img src="students.PNG" alt="">
+      <img src="images/students.PNG" alt="">
       <span>2m+ Students Enroll</span>
     </div>
 
     <!-- Logos -->
     <div class="col-md-7 brand-logos">
-      <img src="visa.PNG" alt="Visa">
-      <img src="spotify.PNG" alt="Spotify">
-      <img src="linkedin.PNG" alt="LinkedIn">
-      <img src="zoom.PNG" alt="Zoom">
+      <img src="images/visa.PNG" alt="Visa">
+      <img src="images/spotify.PNG" alt="Spotify">
+      <img src="images/linkedin.PNG" alt="LinkedIn">
+      <img src="images/zoom.PNG" alt="Zoom">
     </div>
 
   </div>
 </section>
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    menuToggle.classList.toggle("open");
+  });
+</script>
+
 </body>
 </html>
-
