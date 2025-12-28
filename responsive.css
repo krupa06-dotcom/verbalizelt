@@ -88,6 +88,10 @@
     max-width: 320px;
   }
 }
+  .brand-logos img {
+  height: 25px;
+  opacity: 0.9;
+}
 
 /* =====================
    MOBILE
@@ -120,3 +124,4 @@
   opacity: 0.9;
 }
 }
+
