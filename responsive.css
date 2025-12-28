@@ -1,0 +1,122 @@
+/* =====================
+   NAVBAR RESPONSIVE
+===================== */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: #111;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Hide mobile button on desktop */
+.mobile-btn {
+  display: none;
+}
+
+/* =====================
+   TABLET & MOBILE
+===================== */
+@media (max-width: 991px) {
+
+  .custom-navbar {
+    padding: 20px 30px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 30px 0;
+    display: none;
+    border-top: 1px solid #eee;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .desktop-btn {
+    display: none;
+  }
+
+  .mobile-btn {
+    display: block;
+  }
+}
+
+/* =====================
+   HERO RESPONSIVE
+===================== */
+@media (max-width: 991px) {
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 42px;
+  }
+
+  .hero-left p {
+    margin: 20px auto;
+  }
+
+  .email-box {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .email-box input {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* =====================
+   MOBILE
+===================== */
+@media (max-width: 576px) {
+
+  .hero-left h1 {
+    font-size: 32px;
+  }
+
+  .brands .row {
+    text-align: center;
+    gap: 30px;
+  }
+.email-box input {
+  width: 280px;
+  padding: 10px 15px;
+}
+  .students {
+    justify-content: center;
+  }
+
+  .brand-logos {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .brand-logos img {
+  height: 20px;
+  opacity: 0.9;
+}
+}
