@@ -59,12 +59,6 @@
   .mobile-btn {
     display: block;
   }
-}
-
-/* =====================
-   HERO RESPONSIVE
-===================== */
-@media (max-width: 991px) {
 
   .hero {
     text-align: center;
@@ -87,11 +81,12 @@
     width: 100%;
     max-width: 320px;
   }
-}
+
   .brand-logos img {
   height: 25px;
   opacity: 0.9;
 }
+}   
 
 /* =====================
    MOBILE
@@ -124,4 +119,5 @@
   opacity: 0.9;
 }
 }
+
 
